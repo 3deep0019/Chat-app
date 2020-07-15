@@ -1,0 +1,131 @@
+* {
+
+	margin: 0;
+}
+#bg{
+	background: url('/img/mobile-bg.svg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 200px;
+	width: 100%;
+}
+
+#container{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#avatar img{
+	/* margin: 30px; */
+	width: 320px;
+	height: 200px;
+}
+
+#forms{
+	width:320px 
+}
+
+#forms form{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 10px 0;
+}
+
+
+.inputs{
+	height: 35px;
+	margin:10px 0;
+	width: 80%;
+	border:0.5px lightgrey solid;
+	border-radius: 60px;
+
+}
+.inputs::placeholder{
+	padding: 12px;
+}
+
+#button{
+	border:0.5px #B39FF0 solid;
+	margin: 10px 0;
+	border-radius: 60px;
+	width: 50%;
+	height: 40px;
+	background: #B39FF0;
+	font-size: 25px;
+	color: white
+}
+
+@media (min-width: 768px){
+	#bg{
+	background: url('/img/ipad-bg.svg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 320px;
+	width: 100%;
+	}
+
+	#avatar img{
+	margin-top:10px;
+	width: 582px;
+	height: 364px;
+	}
+
+
+
+	#forms{
+	width:582px 
+	}
+
+
+	.inputs{
+		height: 65px;
+		font-size: 25px;
+	}
+	.inputs::placeholder{
+		padding: 30px;
+		font-size: 25px;
+	}
+
+	#button{
+		margin: 10px 0;		
+		height: 60px;
+		font-size: 25px;
+	}
+}
+
+@media (min-width: 1280px){
+	#bg{
+	background: url('/img/Desktop-bg.svg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 270px;
+	width: 100%;
+	margin-bottom: 50px;
+	}
+	input[type=text] {
+  padding-left: 12px;
+  margin: 10px 0;
+  font-size: 25px;
+}	
+
+	#avatar img{
+	margin-top:10px;
+	width: 500px;
+	height: 250px;
+	}
+	#container{
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		justify-content:center;
+	}
+	/*#forms{
+		margin-right: 300px;
+	}
+	*/
+}
